@@ -1,0 +1,80 @@
+.stage {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16/9;
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.stage-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stage-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+}
+
+.stage:focus-visible {
+  outline: 3px solid #646cff;
+  outline-offset: 2px;
+}
+
+.stage.active {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.stage-details-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.stage-details-button:hover,
+.stage-details-button:focus {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.stage-details {
+  color: white;
+  line-height: 1.6;
+}
+
+.characteristics {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.characteristics h4 {
+  margin: 0 0 10px;
+  color: #fea082;
+}
+
+.characteristics ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.characteristics li {
+  margin-bottom: 8px;
+}

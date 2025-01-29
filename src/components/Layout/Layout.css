@@ -1,0 +1,21 @@
+.layout {
+  min-height: 100vh;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+.main-content {
+  padding-top: 2rem;
+  min-height: 100vh;
+  position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
